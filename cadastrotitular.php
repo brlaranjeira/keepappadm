@@ -53,6 +53,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-12">
+                        <label for="titular-dtnasc">Data de Nascimento</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="titular-dtnasc" id="titular-dtnasc">
+                            <div class="input-group-append"><span class="bg-info text-white input-group-text"><i class="fa fa-pencil-alt"></i></span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
                         <label for="titular-genero">Gênero</label>
                         <div class="input-group">
                             <select class="form-control" name="titular-genero" id="titular-genero">
@@ -63,6 +70,8 @@
                             <div class="input-group-append"><span class="bg-info text-white input-group-text"><i class="fa fa-pencil-alt"></i></span></div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-6 col-12">
                         <label for="titular-mail">E-mail</label>
                         <div class="input-group">
@@ -70,8 +79,6 @@
                             <div class="input-group-append"><span class="bg-info text-white input-group-text"><i class="fa fa-pencil-alt"></i></span></div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-lg-6 col-12">
                         <label for="titular-celular">Telefone Celular</label>
                         <div class="input-group">
@@ -79,7 +86,7 @@
                             <div class="input-group-append"><span class="bg-info text-white input-group-text"><i class="fa fa-pencil-alt"></i></span></div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 offset-lg-6 col-12">
                         <label for="titular-fone">Outro telefone</label>
                         <div class="input-group">
                             <input class="form-control" name="titular-fone" id="titular-fone" type="text">
@@ -100,6 +107,27 @@
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">Dependentes</div>
+                        <div class="card-body">
+                            <? for ($i=0;$i<2;$i++) { ?>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group">
+                                            <input class="form-control" disabled type="text" value="Fulano de Silva e Souza">
+                                            <div class="ml-1 input-group-append"><span class="bg-primary text-white input-group-text">Detalhes&nbsp;<i class="far fa-address-card"></i></i></span></div>
+                                            <div class="ml-1 input-group-append"><span class="bg-danger text-white input-group-text"><i class="fa fa-times"></i></i></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <? } ?>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
